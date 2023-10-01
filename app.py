@@ -78,5 +78,8 @@ def login():
 if __name__ == '__main__':
     app.run(debug=True)
 
-## for the login route to work in Postman app for getting the jwt token **there is need to set the "Authorization" in the postman to type "Basic Auth" & 
+## for the login route to work in Postman app for getting the jwt token **there is need to set the "Authorization" in the postman change **type** to "Basic Auth" & 
 ## provide the username and password there
+
+## for getting the data from the sql server for protected function 1) in the "Headers" section type the "Content-Type" in the **key** and "application/json" would be in **value**
+## then in 2) the "Params" in the **key** type "token" and in **value** paste the jwt token that you get from the above /login. Here we'll use the GET method 
